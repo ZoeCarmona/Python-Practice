@@ -1,4 +1,4 @@
-# Problem
+# Problem: Maximum Element (No max())
 # Return the largest number in the array without using maxNum().
 
 # Example
