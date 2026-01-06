@@ -1,4 +1,4 @@
-# Problem
+# Problem: Second Largest Element
 # Return the second largest number in the array.
 
 # Input:  [10, 5, 20, 8]
