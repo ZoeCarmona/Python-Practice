@@ -7,29 +7,18 @@
 # Output: [0, 1]
 
 def two_sum(nums, target):
-    result = []
-    left = 0
-    rigth = 0
+    seen = {}
 
-    for n in range(len(nums)):
-        indexX = n
-        search = target - nums[n]
-        
-        if search < 0:
-            rigth += 1
-        elif search >= 0:
-            rigth += 1
-            indexY = rigth
-            y = nums[rigth]
+    for i, n in enumerate(nums):
+        search = target - n
 
-            sum = nums[n] + y 
+        if search in seen:
+            return [seen[search], i]
 
-            if sum == target:
-                result.append(n)
-                result.append(rigth)
+        seen[n] = i
+    
 
-    return result
 
-nums = [2, 7, 11, 15]
+nums = [2, 7, 11, 15, 2]
 target = 9
 print(two_sum(nums, target))
