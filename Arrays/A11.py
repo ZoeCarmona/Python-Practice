@@ -4,10 +4,13 @@
 # Input:  [1,2,3,4,5]
 # Output: [1,3,6,10,15]
 def running_sum(nums):
-    sum = nums[0]
+    if not nums:
+        return nums
+    
+    current = nums[0]
     for n in range(1, len(nums)):
-        sum += nums[n]
-        nums[n] = sum
+        current += nums[n]
+        nums[n] = current
     return nums
 
 nums = [1,2,3,4,5]
