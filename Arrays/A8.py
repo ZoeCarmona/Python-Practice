@@ -1,4 +1,4 @@
-# Problem
+# Problem: Remove Duplicates (Sorted Array)
 # Given a sorted array, remove duplicates in place and return the new length.
 
 # Input:  [1,1,2,2,3] 
