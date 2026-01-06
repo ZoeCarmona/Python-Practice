@@ -1,4 +1,4 @@
-# Problem
+# Problem: Count Even Numbers
 # Return how many numbers in the array are even.
 
 # Input:  [1, 2, 3, 4, 6]
